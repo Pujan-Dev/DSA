@@ -43,11 +43,12 @@ int main() {
       push(&S, atof(token));
       printf("pushed");
     } else {
-      printf("popped");
 
       op2 = POP(&S);
+      printf("popped\n");
+
       op1 = POP(&S);
-      printf("Popped");
+      printf("Popped\n");
       switch (token[0]) {
       case '+':
         result = op1 + op2;
